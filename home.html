@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles/Style.css" />
+		<link rel="stylesheet" href="styles/Menu.css" />
+		<link rel="stylesheet" type="text/css" href="styles/para.css">
+		<link rel="stylesheet" type="text/css" href="styles/skill.css">
+		<link rel="stylesheet" type="text/css" href="styles/CarouselStyle.css">
+		<link rel="stylesheet" type="text/css" href="styles/Contact.css">
+	</head>
+	<body>
+		<header>
+    		<div id="container">
+    			<a href="#intro">
+    				<img class="logo" src="images/Syadox12.png" alt="logo"/>
+    			</a>
+      			
+      			<nav>
+        			<ul>
+          				<li ><a  href="#intro">ACCUEIL</a></li>
+						<li ><a  href="#me">Mes passions</a></li>
+						<li ><a  href="#video">Vidéos</a></li>
+						<li ><a  href="#contact">Contact</a></li>
+        			</ul>
+      			</nav>
+    		</div>
+  		</header>
+		<nav class="navigation">
+				<div id="menuToggle">
+			  		<input type="checkbox" />
+			  		<span></span>
+			  		<span></span>
+			  		<span></span>
+			  		<ul id="menu">
+						<a class="a-menu" href="home.html"><li class="li-menu">ACCUEIL</li></a>
+						<a class="a-menu" href="projets.html"><li class="li-menu">Mes projets</li></a>
+						<a class="a-menu" href="videos.html"><li class="li-menu">Mes videos</li></a>
+						<a class="a-menu" href="blog.html"><li class="li-menu">Blog</li></a>
+						<a class="a-menu" href="contact.html"><li class="li-menu">Contact</li></a>
+					</ul>
+				</div>
+				<div style="text-align: center;">
+					<a href="home.html">
+						<img class="logo" src="images/Syadox12.png" alt="logo"/>
+					</a>
+				</div>
+		</nav>
+		<section id="intro">
+    		<div class="parallax-one"></div>
+    		<p class="intro">
+    			Bienvenue sur le site officiel de Syadox.<br>Jetez un coup d'œil aux vidéos ci-dessous et parcourez son contenu.<br>Les vidéos sont mises à jour toutes les semaines, alors n'hésitez pas à revenir plus tard!
+			</p>
+		</section>
+		<section id="me">
+			<h1 class="passion">MES PASSIONS</h1>
+			<div class="div_present_two">
+				<p class="present">
+					J'aime beaucoup les jeux vidéos et les nouvelles technologies. j'aime aussi Youtube et c'est la raison pour laquelle j'ai crée ma chaine youtube en 2019 (apres un precedent essai en 2015).
+				</p>
+			</div>
+			<img class="yt" src="images/youtube.png" alt="">
+			<div class="div_present_one">
+				<p class="present1">
+					A la rentrée 2019 je me suis mis au developpement Web et je me suis dit que pour un premier projet ça serait cool de faire un site pour ma chaine, n'hesitez pas à me dire ce que vous en pensez.
+				</p>
+			</div>
+			<img class="html" src="images/html.png" alt="">
+			<div class="div_present_two">
+				<p class="present1">
+					Et recemment je me suis mis à la réalisation d'un jeu vidéo sur Unreal Engine 4. Je débute donc ça me prend du temps, mais j'essaierais de vous tenir informés de l'avancement du projet.
+				</p>
+			</div>
+			<img class="ue4" src="images/ue4.png" alt="">
+			<img class="blender" src="images/blender.png" alt="">
+		</section>
+		<section id="video">
+			<div class="carousel">
+				<p class="para_vid" style="visibility: hidden;">Voici mes vidéos :</p>
+				<h1 class="video">MES VIDEOS</h1>
+				<button class="carousel_button carousel_button-left is-hidden">
+					<span class="chevron left"></span>
+				</button>
+
+				<div class="carousel_track-container">
+					<ul class="carousel_track">
+						<li class="carousel_slide current-slide">
+							<object class="carousel_videos" data="https://www.youtube.com/embed/vyPPGOqvZwk" width="600" height="350"></object>
+						</li>
+						<li class="carousel_slide">
+							<object class="carousel_videos" data="https://www.youtube.com/embed/uK-ddt0HORI" width="600" height="350"></object>
+						</li>
+						<li class="carousel_slide">
+							<object class="carousel_videos" data="https://www.youtube.com/embed/b0EC8ObRPcI" width="600" height="350"></object>
+						</li>
+						<li class="carousel_slide">
+							<object class="carousel_videos" data="https://www.youtube.com/embed/SBlsihKNbxM" width="600" height="350"></object>
+						</li>
+					</ul>
+				</div>
+
+				<button class="carousel_button carousel_button-right">
+					<span class="chevron right"></span>
+				</button>
+
+				<div class="carousel_nav">
+					<button class="carousel_indicator current-slide"></button>
+					<button class="carousel_indicator"></button>
+					<button class="carousel_indicator"></button>
+					<button class="carousel_indicator"></button>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="contact">
+				<h1>Contact</h1>
+        		<form class="form" method="post" action="contact.php">
+            		<input type="text" name="name" placeholder="Votre Nom :" required><br><br>
+
+            		<input type="mail" name="mail" placeholder="Votre Adresse Mail :" required><br><br>
+
+            		<input type="text" name="country" placeholder="Votre pays :" required><br><br>
+
+            		<input type="text" name="subject" placeholder="Sujet :" required><br><br>
+
+            		<textarea name="message" rows="15" placeholder="Votre Message :" required></textarea><br><br>
+
+            		<input type="submit" class="submit" value="Envoyer">
+        		</form>
+    		</div>
+		</section>
+		<footer>
+			<div id="social">
+				<h2 class="netw">Suivez-moi sur mes réseaux sociaux :</h2>
+				<a href="https://www.instagram.com/syadoxyt/?hl=fr">
+					<img class="social" src="images/insta.png">
+				</a>
+				<a href="https://www.youtube.com/channel/UCMxaEnFAld_p6Iroi34a13w">
+					<img class="social" src="images/yt.png">
+				</a>
+				<a href="https://discord.io/SYADOX">
+					<img class="social" src="images/discord.png">
+				</a>
+			</div>
+		</footer>
+
+		<script src="javascript/carousel.js"></script>
+		<script src="javascript/menu.js"></script>
+		<script type="text/javascript" src="javascript/menu.js"></script>
+	</body>
+</html>
